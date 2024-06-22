@@ -1,8 +1,8 @@
 <?php
-$admin = "5820956681";
-$admin2 = "5820956681";
-$Dev = array("1231723044","5820956681");
-$token = "توكن";
+$admin = "5598689784";
+$admin2 = "5539139939";
+$Dev = array("5598689784","5539139939");
+$token = "6621338798:AAFbg9ckaf6bBxJY3y0Siy3YWgksklx48s4";
   function bot($method,$datas=[]){
     $abuehab = http_build_query($datas);
         $url = "https://api.telegram.org/bot".$GLOBALS['token']."/".$method."?$abuehab";
@@ -16,7 +16,7 @@ function delTree($dir) {
     }
     return rmdir($dir);
   }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 mkdir("bots");
 mkdir("data");
 $title = $message->chat->title;
@@ -25,7 +25,7 @@ $carlos = json_decode(file_get_contents("data/carlos.json"),1);
 $name_tag = "[$name](tg://user?id=$from_id)";
 $members = explode("\n",file_get_contents("data/members.txt"));
 $m = count($members) -1;
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 $update = json_decode(file_get_contents('php://input'));
 if($update->message){
 	$message = $update->message;
@@ -134,18 +134,18 @@ $forward_title = $message->forward_from_chat->title;
 	}
 }
 $title = $message->chat->title;
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 $members = $carlos["mmbars"];
 if($tc == 'private' and !in_array($from_id,$members)){
 $carlos['mmbars'][] = $from_id;
 file_put_contents("data/carlos.json",json_encode($carlos));
 }
 $md3 = count($carlos['mmbars']);
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 $carlos = json_decode(file_get_contents("data/carlos.json"),1);
 $botadd = count($carlos['carlos']);
 $web = "mmddae.linuweb.shop/C/";
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if ($message && in_array($from_id,$carlos['ban'])){
 bot('sendmessage',[
 'chat_id'=>$chat_id,
@@ -155,7 +155,7 @@ bot('sendmessage',[
 'reply_to_message_id'=>$message->message_id,
 ]);
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 $d9 = $carlos['joen'];
 $d11 = $carlos['ch'];
 $d10 = $d11;
@@ -179,7 +179,7 @@ bot('sendMessage',[
 }
 }
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 $d8 = $carlos['bots'];
 if($message and $d8 == "❎" and $from_id != $admin2){
 bot('sendmessage',[
@@ -191,7 +191,7 @@ bot('sendmessage',[
 ]);
 exit();
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if( $text =="/start" or $text =="رجوع ↪️"){
 if(in_array($from_id,$Dev)){
 	$d6 = $carlos['sarat'];
@@ -231,12 +231,12 @@ $carlos['okall'] = "no";
 $carlos['okk'] = "no";
 file_put_contents("data/carlos.json",json_encode($carlos));
 }}
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if($text =="/start" and !in_array($from_id,$carlos['ban'])){
 if(!in_array($from_id,$Dev)){
 bot('sendmessage',[
 'chat_id'=>$chat_id,
-'text'=>"*اهلا بك في سورس ليجو*
+'text'=>"*اهلا بك في سورس كبينه*
 
 ~ يمكنك صنع بوتات حمايه من الصانع.",
 'parse_mode'=>"markdown",
@@ -251,7 +251,7 @@ bot('sendmessage',[
 ])
 ]);
 }}
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if($text =="‹ الغاء الامر ›" and !in_array($from_id,$carlos['ban'])){
 if(!in_array($from_id,$Dev)){
 bot('sendmessage',[
@@ -271,7 +271,7 @@ bot('sendmessage',[
 $carlos[$from_id]['token'] = "nobot";
 file_put_contents("data/carlos.json",json_encode($carlos));
 }}
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if($text == "‹ طريقه الاستعمال ›" and !in_array($from_id,$carlos['ban'])){
 bot('sendmessage',[
 'chat_id'=>$chat_id,
@@ -296,8 +296,8 @@ bot('sendmessage',[
 ❗️[لمشاهده كيف يتم استخراج التوكن اضغط هنا](https://telegra.ph/%D8%B4%D8%B1%D8%AD-%D8%A7%D9%86%D8%B4%D8%A7%D8%A1-%D8%AA%D9%88%D9%83%D9%86-09-26)
 اتمنى ان يكون الشرح مفهوم
 
-تابع جديدنا  - [@FunctionCode]
-للاستفسار - @KKDRR
+تابع جديدنا  - [@xx7fx]
+للاستفسار - @c9c99c
 ━━━━━━━━━━━━━━━━━ ", 
 'parse_mode'=>"Markdown",
 'disable_web_page_preview'=>true,
@@ -309,17 +309,17 @@ if($text == "‹ المطور ›" and !in_array($from_id,$carlos['ban'])){
 bot('sendmessage',[
 'chat_id'=>$chat_id,
 'text'=>"
-┏•━•━•━ 『𝐋𝐄𝐆𝐑』 ━•━•━•┓
+┏•━•━•━ 『قبينه』 ━•━•━•┓
 ╏⍟ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 
-╏⍟ 𝙸𝙽𝙵𝙾 𝙳𝙴𝚅 𝚂𝙾𝚄𝚁𝙲𝙴 
-╏⍟ 𝙳𝙴𝚅 : @KKDRR
+╏⍟ 𝙸𝙽𝙵𝙾 سورس كبينه 
+╏⍟ 𝙳𝙴𝚅 : @c9c99c
 ┗•━•━•━ 『𝐇𝐚𝐌𝐨』 ━•━•━•┛ ", 
 'parse_mode'=>"Markdown",
 'disable_web_page_preview'=>true,
 'reply_to_message_id'=>$message->message_id,
 ]);
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 $abuehab = $carlos['carlos'];
 if($text == "‹ صنع بوت ›" and in_array($from_id,$abuehab) and !in_array($from_id,$carlos['ban'])){
 bot('sendmessage',[
@@ -443,7 +443,7 @@ unset($carlos["carlos"][$key]);
 $carlos["carlos"] = array_values($carlos["carlos"]); 
 file_put_contents("data/carlos.json",json_encode($carlos));
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if($text == "تحديث السورس" and in_array($from_id,$Dev)){
 foreach(scandir('bots/') as $f2){
 if($f2 != '.' and $f2 != '..'){
@@ -460,7 +460,7 @@ bot('sendmessage',[
 'parse_mode'=>"Markdown",
 ]);
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if($text == "حذف تنصيب" and in_array($from_id,$Dev)){
 bot('sendmessage',[
 'chat_id'=>$chat_id,
@@ -524,7 +524,7 @@ file_put_contents("data/carlos",json_encode($carlos));
 $carlos['delbots'] = "off";
 file_put_contents("data/carlos.json",json_encode($carlos));
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if($text == "الاحصائيات" and in_array($from_id,$Dev)){
 bot('sendmessage',[
 'chat_id'=>$chat_id,
@@ -542,7 +542,7 @@ bot('sendmessage',[
 ])
 ]);
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 $d6 = $carlos['sarat'];
 if($text == "تفعيل التنبية" and in_array($from_id,$Dev)){
 bot('sendmessage',[
@@ -580,7 +580,7 @@ bot('sendmessage',[
 $carlos['sarat'] = "❎";
 file_put_contents("data/carlos.json",json_encode($carlos));
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 $d7 = $carlos['tojahh'];
 if($text == "تفعيل التوجيه" and in_array($from_id,$Dev)){
 bot('sendmessage',[
@@ -618,7 +618,7 @@ bot('sendmessage',[
 $carlos['tojahh'] = "❎";
 file_put_contents("data/carlos.json",json_encode($carlos));
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if($message and $text != "/start" and $from_id != $admin2 and $d7 == "✅" and !$data){
 bot('forwardMessage',[
 'chat_id'=>$admin2,
@@ -627,7 +627,7 @@ bot('forwardMessage',[
 'text'=>$text,
 ]);
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if($user == null){
 $user = "None";
 }elseif($user != null){
@@ -646,7 +646,7 @@ bot('sendmessage',[
 'disable_web_page_preview'=>true, 
 ]);  
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if($text == "تفعيل البوت" and in_array($from_id,$Dev)){
 bot('sendmessage',[
 'chat_id'=>$chat_id,
@@ -683,7 +683,7 @@ bot('sendmessage',[
 $carlos['bots'] = "❎";
 file_put_contents("data/carlos.json",json_encode($carlos));
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if($text == "اذاعة" and $from_id == $admin2){
 bot('sendmessage',[
 'chat_id'=>$chat_id,
@@ -798,7 +798,7 @@ $mmm = $count - $iii;
 					unlink("data/A5.json");
 	file_put_contents("data/carlos.json",json_encode($carlos));
 				}
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if($carlos['ch'] == null){
 $ch = "لا توجد قناة حاليا";
 }elseif($carlos['ch'] != null){
@@ -897,7 +897,7 @@ bot('sendmessage',[
 ])
 ]);
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if($text == "تفعيل الاشتراك" and in_array($from_id,$Dev)){
 bot('sendmessage',[
 'chat_id'=>$chat_id,
@@ -934,7 +934,7 @@ bot('sendmessage',[
 $carlos['joen'] = "❎";
 file_put_contents("data/carlos.json",json_encode($carlos));
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 if($text=="المحظورين" and $carlos['ban'] != null){
 $banlast = $carlos['ban'];
 for($z = 0;$z <= count($banlast)-1;$z++){
@@ -978,7 +978,7 @@ bot("SendMessage",[
 $carlos['ban'] = null;
 file_put_contents("data/carlos.json",json_encode($carlos));
 }
-#-----------(carlos)-----------#
+#-----------(كبينه)-----------#
 $ban_id = $message->reply_to_message->forward_from->id;
 if($ban_id && $text == "حظر"){
 $apiban = json_decode(file_get_contents("http://api.telegram.org/bot$token/getChat?chat_id=$ban_id"));
